@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+}
+
+
 :root {
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -21,4 +30,10 @@
 .section-tight {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
 }
