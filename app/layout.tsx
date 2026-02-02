@@ -6,7 +6,11 @@ export const metadata = {
   title: "PRIMA — Africa’s Foundational Infrastructure",
   description:
     "PRIMA designs, builds, acquires, and safeguards Africa’s foundational infrastructure for generations.",
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
