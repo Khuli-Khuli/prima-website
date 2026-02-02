@@ -1,3 +1,9 @@
+/**
+ * Home Page
+ * Hero section with large heading and introductory paragraph
+ * Responsive typography scales from mobile to desktop
+ * Grid layout prepares for future content sections
+ */
 export default function HomePage() {
   return (
     <main className="py-20">

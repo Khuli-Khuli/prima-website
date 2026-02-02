@@ -1,16 +1,20 @@
+/* Import Tailwind CSS utility layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scrolling for better UX */
 html {
   scroll-behavior: smooth;
 }
 
+/* Apply default body styling */
 body {
   @apply antialiased;
 }
 
 
+/* CSS variables for consistent typography across the site */
 :root {
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -22,17 +26,19 @@ body {
   --text-4xl: 2.25rem;
 }
 
+/* Reusable section spacing classes for consistent vertical rhythm */
 .section {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
+/* Tighter spacing variant for nested sections */
 .section-tight {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-/* Make images responsive by default */
+/* Ensure all images scale responsively and maintain aspect ratio */
 img {
   max-width: 100%;
   height: auto;

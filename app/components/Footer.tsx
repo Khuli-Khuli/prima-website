@@ -1,3 +1,8 @@
+/**
+ * Footer Component
+ * Displays site branding, quick links, and copyright information
+ * Responsive layout: stacked on mobile, horizontal on desktop
+ */
 export default function Footer() {
   return (
     <footer className="mt-20 border-t pt-8 pb-12 bg-white text-sm text-gray-600">

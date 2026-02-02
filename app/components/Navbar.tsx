@@ -4,15 +4,27 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+/**
+ * Navbar Component
+ * Responsive navigation bar with:
+ * - PRIMA branding/logo
+ * - Hamburger menu for mobile (visible on screens < md)
+ * - Desktop horizontal navigation (visible on md+)
+ * - Active page highlighting
+ */
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname(); // Get current page path for active link detection
 
+  // Determine if a link matches the current page
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
+  // Apply styling based on whether link is active
+  // Active links: bold with bottom border | Inactive: gray with hover effect
   const linkClass = (href: string) =>
     `transition-colors ${
       isActive(href)
