@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
